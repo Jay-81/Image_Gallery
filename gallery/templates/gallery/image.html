@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cute Meme Cats Gallery 🐱</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+  <header>
+    <h1>Cute Meme Cats Gallery 🐾</h1>
+    <h3>JAYANI K 212224040134</h3>
+  </header>
+
+  <main class="gallery">
+    <div class="image-card">
+      <img src="{% static 'a.png' %}" alt="Snowy">
+      <p>Snowy ❄️</p>
+    </div>
+    <div class="image-card">
+      <img src="{% static 'aa.png' %}" alt="Mochi">
+      <p>Mochi 🍪</p>
+    </div>
+    <div class="image-card">
+      <img src="{% static 'aaa.png' %}" alt="Luna">
+      <p>Luna 🌸</p>
+    </div>
+    <div class="image-card">
+      <img src="{% static 'aaaa.png' %}" alt="Peanut">
+      <p>Peanut 🐾</p>
+    </div>
+    <div class="image-card">
+      <img src="{% static 'aaaaa.png' %}" alt="Smiley">
+      <p>Smiley 😹</p>
+    </div>
+  </main>
+
+  <div class="popup" id="popup">
+    <span class="close" id="close">&times;</span>
+    <img src="" alt="Popup Cat" id="popupImg">
+    <p class="popup-caption" id="popupCaption"></p>
+  </div>
+
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
